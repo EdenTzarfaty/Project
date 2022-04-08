@@ -21,19 +21,19 @@ public class CountryController {
 
     ////spring.devtools.livereload.port=38483
 
-    @PostMapping("/Countries") //add countries from url
-    public void AddCountries() throws JsonProcessingException {
-        String url = "https://restcountries.com/v3.1/all";
-        String json = restTemplate.getForObject(url, String.class);
-        String recordsArray = mapper.readTree(json).get("result").get("records").toString();
-        List<Country> list = mapper.readValue(recordsArray, new TypeReference<>(){});
-        countryRepository.saveAll(list);
-    }
+//    @PostMapping("/countries") //add countries from url
+//    public void AddCountries() throws JsonProcessingException {
+//        String url = "https://restcountries.com/v3.1/all";
+//        String json = restTemplate.getForObject(url, String.class);
+//        String recordsArray = mapper.readTree(json).get("result").get("records").toString();
+//        List<Country> list = mapper.readValue(recordsArray, new TypeReference<>(){});
+//        countryRepository.saveAll(list);
+//    }
 
 
     @PostMapping("/country") //create new country
     public void CreateCountry(@RequestBody final Country country){
-        countryRepository.save(country);
+        countryRepository.saveTo(country);
     }
 
     @GetMapping("/country/count") //respond the number of all countries stored at server.
@@ -47,11 +47,12 @@ public class CountryController {
     }
 
     @GetMapping("/country/{id}") //respond with a JSON representation of the specific country with the requested ID.
-    public Country GetOne(@PathVariable final int id) {
+    public Country GetOne(@PathVariable final String id) {
         return countryRepository.findById(id).orElseGet(Country::new);
     }
+
     @DeleteMapping("/country/{id}")
-    public void Delete(@PathVariable final int id){
+    public void Delete(@PathVariable final String id){
         countryRepository.deleteById(id);
     }
 }

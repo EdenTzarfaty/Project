@@ -5,13 +5,13 @@ import java.sql.Timestamp;
 
 public class Country {
     @Id
-    private int id;
+    private String id;
     private int population;
     private double area;
     private String region;
     private Name name;
 
-    public Country(int id, int population, double area, String region, Name name) {
+    public Country(String id, int population, double area, String region, Name name) {
         this.id = id;
         this.population = population;
         this.area = area;
@@ -23,11 +23,11 @@ public class Country {
 
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
