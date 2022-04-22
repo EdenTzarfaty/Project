@@ -4,6 +4,7 @@ package com.example.demo2;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import org.springframework.data.annotation.Id;
 
+/* Recovered Class */
 public class Recovered {
     @Id
     private int _id;
@@ -17,18 +18,6 @@ public class Recovered {
     private String Vac_dose_prior_first_positive;
 
     public Recovered() {
-    }
-
-    public Recovered(int _id, String age_group, String gender, String month_first_positive, String year_first_positive, String test_indication, String Ind_Re_infection, String Total_vac_dose, String Vac_dose_prior_first_positive) {
-        this._id = _id;
-        this.age_group = age_group;
-        this.gender = gender;
-        this.month_first_positive = month_first_positive;
-        this.year_first_positive = year_first_positive;
-        this.test_indication = test_indication;
-        this.Ind_Re_infection = Ind_Re_infection;
-        this.Total_vac_dose = Total_vac_dose;
-        this.Vac_dose_prior_first_positive = Vac_dose_prior_first_positive;
     }
 
     public int get_id() {

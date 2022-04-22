@@ -3,31 +3,28 @@ package com.example.demo2;
 import org.springframework.data.annotation.Id;
 import java.sql.Timestamp;
 
+/* Country Class */
 public class Country {
+
+    private static int count; //for id country
+
     @Id
-    private String id;
+    private int id;
+
     private int population;
     private double area;
     private String region;
     private Name name;
 
-    public Country(String id, int population, double area, String region, Name name) {
-        this.id = id;
-        this.population = population;
-        this.area = area;
-        this.region = region;
-        this.name = name;
-    }
-
     public Country() {
-
+        this.id = ++count;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 

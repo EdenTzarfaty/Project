@@ -3,5 +3,5 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface RecoveredRepository extends MongoRepository<Recovered, Integer> {
+public interface VerifiedRepository extends MongoRepository<Verified, Integer> {
 }

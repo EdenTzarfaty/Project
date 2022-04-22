@@ -3,11 +3,10 @@ package com.example.demo2;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
-public class Demo2Application {
+public class HealthApplication {
 
 	@Bean
 	public RestTemplate getRestTemplate() {
@@ -15,7 +14,7 @@ public class Demo2Application {
 	}
 
 	public static void main(String[] args) {
-		SpringApplication.run(Demo2Application.class, args);
+		SpringApplication.run(HealthApplication.class, args);
 	}
 
 }
