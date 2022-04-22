@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="service-registration-and-discovery-client" />
+        <module name="eureka-client" />
         <module name="demo2 (1)" />
         <module name="service-registration-and-discovery-service" />
         <module name="demo2" />
@@ -16,6 +17,7 @@
     <bytecodeTargetLevel>
       <module name="demo2" target="11" />
       <module name="demo2 (1)" target="11" />
+      <module name="eureka-client" target="15" />
       <module name="gs-service-registration-and-discovery" target="1.5" />
       <module name="service-registration-and-discovery-client" target="8" />
       <module name="service-registration-and-discovery-service" target="8" />
