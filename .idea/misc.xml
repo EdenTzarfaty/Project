@@ -5,6 +5,8 @@
       <list>
         <option value="$PROJECT_DIR$/HealthMicroservice/pom.xml" />
         <option value="$PROJECT_DIR$/PopulationMicroservice/pom.xml" />
+        <option value="$PROJECT_DIR$/ServiceDiscovery/ServiceDiscovery/pom.xml" />
+        <option value="$PROJECT_DIR$/APIGateway/eureka-client/pom.xml" />
       </list>
     </option>
   </component>

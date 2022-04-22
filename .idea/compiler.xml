@@ -7,19 +7,26 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="service-registration-and-discovery-client" />
         <module name="demo2 (1)" />
+        <module name="service-registration-and-discovery-service" />
         <module name="demo2" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="demo2" target="11" />
       <module name="demo2 (1)" target="11" />
+      <module name="gs-service-registration-and-discovery" target="1.5" />
+      <module name="service-registration-and-discovery-client" target="8" />
+      <module name="service-registration-and-discovery-service" target="8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="demo2" options="-parameters" />
       <module name="demo2 (1)" options="-parameters" />
+      <module name="service-registration-and-discovery-client" options="-parameters" />
+      <module name="service-registration-and-discovery-service" options="-parameters" />
     </option>
   </component>
 </project>
