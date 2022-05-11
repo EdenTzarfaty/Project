@@ -20,8 +20,6 @@ public class RecoveredController {
         this.recoveredRepository = recoveredRepository;
     }
 
-    ////spring.devtools.livereload.port=38483
-
     /* Store recovered data from gov.il to the database */
     @PostMapping("/Recovered")
     public void addRecovered() throws JsonProcessingException {

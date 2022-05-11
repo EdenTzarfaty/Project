@@ -16,18 +16,12 @@ import java.util.List;
 @Configuration
 public class CountriesDatabaseLoad
 {
-
     private static final Logger log = LoggerFactory.getLogger(CountriesDatabaseLoad.class);
+
     @Bean
     CommandLineRunner initDatabaseCountries(MongoTemplate mongoTemplate)
     {
         return args -> {
-
-            //IMPLMENT YOUR CODE HERE
-            //In order to work with countries data,
-            //we need to fetch this data form somewhere,
-            //convert it to Java object and store it at database
-
         };
     }
 }

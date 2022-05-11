@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/HealthMicroservice/demo2.iml" filepath="$PROJECT_DIR$/HealthMicroservice/demo2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/PopulationMicroservice/demo2 (1).iml" filepath="$PROJECT_DIR$/PopulationMicroservice/demo2 (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/HealthMicroservice/H-M.iml" filepath="$PROJECT_DIR$/HealthMicroservice/H-M.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PopulationMicroservice/P-M.iml" filepath="$PROJECT_DIR$/PopulationMicroservice/P-M.iml" />
       <module fileurl="file://$PROJECT_DIR$/ServiceDiscovery/ServiceDiscovery/eureka-client/eureka-client.iml" filepath="$PROJECT_DIR$/ServiceDiscovery/ServiceDiscovery/eureka-client/eureka-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/ServiceDiscovery/ServiceDiscovery/gs-service-registration-and-discovery.iml" filepath="$PROJECT_DIR$/ServiceDiscovery/ServiceDiscovery/gs-service-registration-and-discovery.iml" />
       <module fileurl="file://$PROJECT_DIR$/APIGateway/eureka-client/service-registration-and-discovery-client.iml" filepath="$PROJECT_DIR$/APIGateway/eureka-client/service-registration-and-discovery-client.iml" />
