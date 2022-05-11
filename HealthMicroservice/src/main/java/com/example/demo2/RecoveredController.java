@@ -51,7 +51,7 @@ public class RecoveredController {
 
     /* Delete recovered with requested ID from the database */
     @DeleteMapping("/Recovered/{id}")
-    public void Delete(@PathVariable final int id){
+    public void delete(@PathVariable final int id){
         recoveredRepository.deleteById(id);
     }
 }
