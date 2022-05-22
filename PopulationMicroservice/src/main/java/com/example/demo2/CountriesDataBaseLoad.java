@@ -26,17 +26,16 @@ public class CountriesDataBaseLoad {
         mapper = new ObjectMapper().configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false); //ignore no relative field
     }
 
-
-
     @PostConstruct
     private void initDatabaseCountries() {
         try {
             log.info("starting");
             String url = "https://restcountries.com/v3.1/all";
             JsonNode json = restTemplate.getForObject(url, JsonNode.class);
+            assert json != null;
             List<Country> list = mapper.readValue(json.toString(), new TypeReference<>(){});
             countryRepository.saveAll(list);
-            log.info(list.size() + " element added to the database");
+            log.info(list.size() + " countries added to the database");
         }
         catch (Exception e){
             log.error("error", e);
