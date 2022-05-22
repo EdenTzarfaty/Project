@@ -23,7 +23,7 @@ public class ServiceRegistrationAndDiscoveryClientApplication {
 		SpringApplication.run(ServiceRegistrationAndDiscoveryClientApplication.class, args);
 	}
 
-	@GetMapping("/home")
+	@GetMapping("/Home")
 	public String home() {
 		return "Eureka Client application";
 	}

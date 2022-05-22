@@ -10,7 +10,6 @@
         <module name="H-M" />
         <module name="P-M" />
         <module name="service-registration-and-discovery-client" />
-        <module name="eureka-client" />
         <module name="service-registration-and-discovery-service" />
       </profile>
     </annotationProcessing>
